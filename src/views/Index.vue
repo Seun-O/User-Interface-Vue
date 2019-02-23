@@ -1,5 +1,6 @@
 <template>
     <div>
+    <Header />
     <!-- Home Page Content:-->
     <header id="main-header">
       <div class="bg">
@@ -129,8 +130,12 @@
 </template>
 
 <script>
+import Header from "../components/Header"
 export default {
-    name: "index"
+    name: "index",
+    components:{
+        Header,
+    }
 }
 </script>
 
