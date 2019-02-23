@@ -9,7 +9,7 @@
           <h2>Excellence,</h2>
           <h2>Progress.</h2>
         </div>
-        <div class="bg-arrow">
+        <div ref="bgArrow" class="bg-arrow">
           <a href="#main"><i class="fas fa-angle-double-down"></i></a>
         </div>
       </div>
@@ -135,8 +135,18 @@ export default {
     name: "index",
     components:{
         Header,
+    },
+    methods:{
+
+    },
+    created(){
+      let btn_down = document.querySelector(".bg-arrow")
+
     }
 }
+
+
+
 </script>
 
 <style scoped>

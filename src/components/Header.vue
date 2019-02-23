@@ -28,6 +28,7 @@ export default {
     methods: {
         open: function (e){
             this.$refs.navHide.classList.toggle('hide');
+            TweenMax.staggerFrom("a", 0.2, { opacity: 0, scale: 0.5, x: 80 }, 0.2);
             this.$refs.menuBtn.classList.toggle('close');
         }
     }

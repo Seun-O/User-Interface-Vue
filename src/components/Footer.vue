@@ -10,7 +10,7 @@
           </h2>
           <div class="ft-email-container">
             <input type="email" placeholder="Enter email" />
-            <div class="ft-btn"><i class="fas fa-envelope"></i></div>
+            <div ref="ftBtn" class="ft-btn" v-on:click="ft_sub"><i class="fas fa-envelope"></i></div>
           </div>
           <br />
           We'll never share your email with anyone else.
@@ -47,7 +47,12 @@
 
 <script>
 export default {
-    name: "Footer"
+    name: "Footer",
+    methods:{
+        ft_sub: function(e) {
+         TweenLite.from(this.$refs.ftBtn, 1, {boxShadow: "#333 2px 2px 20px"});
+        }
+    }
 }
 </script>
 
